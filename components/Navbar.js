@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
 import { Link } from "react-scroll";
 import Image from "next/image";
-// import Logo from "../public/streamlineLogo.png";
 
 function Navbar() {
 	const [isOpen, setIsOpen] = useState(false);
@@ -125,7 +124,7 @@ function Navbar() {
 						<div className="md:hidden" id="mobile-menu">
 							<div
 								ref={ref}
-								className="bg-white px-2 pt-2 pb-3 space-y-1 sm:px-3"
+								className="bg-white px-2 pt-2 pb-3 space-y-1 sm:px-3 rounded-[2rem]"
 							>
 								<Link
 									href="/home"
@@ -134,7 +133,7 @@ function Navbar() {
 									smooth={true}
 									offset={50}
 									duration={500}
-									className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+									className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-[1.5rem] text-base font-medium"
 								>
 									Home
 								</Link>
@@ -145,44 +144,32 @@ function Navbar() {
 									smooth={true}
 									offset={50}
 									duration={500}
-									className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+									className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-[1.5rem] text-base font-medium"
 								>
 									About
 								</Link>
 
 								<Link
-									href="/work"
-									activeClass="work"
-									to="work"
+									href="/project"
+									activeClass="project"
+									to="project"
 									smooth={true}
 									offset={50}
 									duration={500}
-									className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+									className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-[1.5rem] text-base font-medium"
 								>
 									Projects
 								</Link>
 								<Link
-									href="/services"
-									activeClass="services"
+									href="/contact"
+									activeClass="contact"
 									to="services"
 									smooth={true}
 									offset={50}
 									duration={500}
-									className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+									className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-[1.5rem] text-base font-medium"
 								>
 									Services
-								</Link>
-
-								<Link
-									href="/contact"
-									activeClass="work"
-									to="work"
-									smooth={true}
-									offset={50}
-									duration={500}
-									className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-								>
-									Contact
 								</Link>
 							</div>
 						</div>
