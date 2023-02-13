@@ -163,13 +163,13 @@ function Navbar() {
 								<Link
 									href="/contact"
 									activeClass="contact"
-									to="services"
+									to="contact"
 									smooth={true}
 									offset={50}
 									duration={500}
 									className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-[1.5rem] text-base font-medium"
 								>
-									Services
+									Contact
 								</Link>
 							</div>
 						</div>
